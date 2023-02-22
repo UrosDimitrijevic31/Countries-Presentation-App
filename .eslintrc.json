@@ -1,0 +1,28 @@
+{
+  "extends": ["react-app", "react-app/jest", "prettier"],
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 200,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+        "ignoreComments": true
+      }
+    ],
+    "max-lines": [
+      "error",
+      {
+        "max": 200,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "semi": [2, "always"],
+    "no-console": [
+      2,
+      {
+        "allow": ["warn", "error", "log"]
+      }
+    ]
+  }
+}
