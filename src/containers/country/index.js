@@ -24,6 +24,7 @@ export const CardInfo = styled.div`
     display: flex;
     flex-direction: column;
     padding: 20px 25px;
+    flex-wrap: wrap;
 `;
 export const CountryName = styled.h3`
     display: flex;

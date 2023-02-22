@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { endpoints } from '../../api/endpoints';
 import { axiosInstance } from '../../service/axiosService';
-import { BorderCountriesWrapper, BtnWrapper, CountryWrapper, Details, Flag, Info, Title, ViewOnMapWrapper } from './index';
+import { BorderCountriesWrapper, BtnWrapper, CountryWrapper, Details, Flag, Info, InfoWrapper, Title, ViewOnMapWrapper } from './index';
 
 export default function CountryDashboard() {
     let { name } = useParams();
@@ -49,12 +49,12 @@ export default function CountryDashboard() {
                     <CountryWrapper key={index}>
                         <Flag>
                             <img
-                                src={item.flags.png}
+                                src={item.flags.svg}
                                 alt={item.flags.alt}
                             />
                         </Flag>
                         <Info>
-                            <div className='infoWrapper'>
+                            <InfoWrapper>
                                 <h1>{item.name.common}</h1>
                                 <Details>
                                     <div className='LeftSide'>
@@ -101,7 +101,7 @@ export default function CountryDashboard() {
                                         <button>Netherland</button>
                                     </div>
                                 </BorderCountriesWrapper>
-                            </div>
+                            </InfoWrapper>
                         </Info>
                     </CountryWrapper>
                 ))}

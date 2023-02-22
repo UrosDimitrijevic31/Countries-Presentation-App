@@ -8,16 +8,31 @@ export const BtnWrapper = styled.div`
 
 export const CountryWrapper = styled.div`
     display: flex;
+    justify-content: space-between;
 `;
 export const Flag = styled.div`
     display: flex;
+    width: 45%;
+
+    img {
+        width: 100%;
+    }
 `;
 export const Info = styled.div`
     display: flex;
+    width: 45%;
+`;
+export const InfoWrapper = styled.div`
+    width: 100%;
 `;
 
 export const Details = styled.div`
     display: flex;
+    justify-content: space-between;
+    div {
+        width: 45%;
+        flex-wrap: wrap;
+    }
 `;
 export const ViewOnMapWrapper = styled.div`
     margin: 15px 0;
