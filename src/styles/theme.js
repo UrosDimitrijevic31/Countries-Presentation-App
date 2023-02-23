@@ -14,13 +14,13 @@ export const theme = {
         desktop: 'only screen and (min-width: 1440px)',
         desktopLarge: 'only screen and (min-width: 1920px)',
 
-        maxMobile: 'only screen and (max-width: 767px)',
+        maxMobile: 'only screen and (max-width: 500px)',
         maxTablet: 'only screen and (max-width: 1440px)',
         maxDesktop: 'only screen and (max-width: 1919px)',
 
         onlySmallMobile: 'only screen and (max-width: 320px)',
         onlyMobile: 'only screen and (max-width: 767px)',
-        onlyTablet: 'only screen and (min-width: 768px) and (max-width: 1440px)',
+        onlyTablet: 'only screen and (min-width: 500px) and (max-width: 1440px)',
         onlyMobileAndTablet: 'only screen and (max-width: 1440px)'
     },
     shadows: {

@@ -22,5 +22,6 @@ export const CssBaseline = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "NunitoSans Light", sans-serif;
+        letter-spacing: 0.3px;
     }
 `;

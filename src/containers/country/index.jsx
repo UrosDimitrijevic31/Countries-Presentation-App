@@ -15,7 +15,7 @@ export default function Country({ src, alt, name, population, region, capital })
             <CardInfo>
                 <CountryName>{name}</CountryName>
                 <CountryDetails>
-                    Population: <Span>{population}</Span>
+                    Population: <Span>{population.toLocaleString('en-US')}</Span>
                 </CountryDetails>
                 <CountryDetails>
                     Region: <Span>{region}</Span>
